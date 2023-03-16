@@ -2,7 +2,7 @@
  
  1. Instalar dependencias: 
     * instalar Arduino IDE 2.0
-    * instalar [VisualStudioCode](https://code.visualstudio.com/download) Con La Extension[Plataformio](https://platformio.org/install/ide?install=vscode)
+    * instalar [VisualStudioCode](https://code.visualstudio.com/download) Con La Extension [Plataformio](https://platformio.org/install/ide?install=vscode)
  2. Librerias de arduino necesitadas:
     * [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
     * [TJpg_Decoder](https://github.com/Bodmer/TJpg_Decoder)
