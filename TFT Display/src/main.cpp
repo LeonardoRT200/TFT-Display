@@ -21,7 +21,7 @@
 // Set REPEAT_CAL to true instead of false to run calibration
 // again, otherwise it will only be done once.
 // Repeat calibration if you change the screen rotation.
-#define REPEAT_CAL false
+#define REPEAT_CAL true
 
 //Dimensions and coordinates of Button get 
 #define BTN_GET_X 205
@@ -43,17 +43,13 @@
 #include "List_SPIFFS.h"
 #include "Web_Fetch.h"
 
-#include <ezButton.h>
-
 //const char* ssid = "INFINITUM05A4_2.4";
 //const char* password = "EHr3bHaKy3";
 
 const char* ssid = "DESKTOP-UOUOP00 0082";
 const char* password = "91k136#M";
 
-ezButton button(14);  // create ezButton object that attach to pin 7;
-
-String camServer = "http://192.168.137.146";
+String camServer = "http://192.168.137.33/";
 
 // the following variables are unsigned longs because the time, measured in
 // milliseconds, will quickly become a bigger number than can be stored in an int.
@@ -119,13 +115,13 @@ void touch_calibrate()
     tft.fillScreen(TFT_BLACK);
     tft.setCursor(20, 0);
 
-    tft.println("Touch corners as indicated");
+    tft.println("Toca la esquina que se indique");
 
     tft.setTextFont(1);
     tft.println();
 
     if (REPEAT_CAL) {
-      tft.println("Set REPEAT_CAL to false to stop this running again!");
+      //tft.println("Set REPEAT_CAL to false to stop this running again!");
     }
 
     tft.calibrateTouch(calData, TFT_SKYBLUE, TFT_BLACK, 15);
@@ -142,7 +138,6 @@ void touch_calibrate()
 
 void setup() {
   Serial.begin(9600);
-  button.setDebounceTime(1);
   tft.begin();
   tft.setRotation(0);
   
@@ -228,7 +223,7 @@ void loop() {
 
     // Now draw the SPIFFS file
     tft.fillScreen(TFT_BLACK);
-    TJpgDec.drawFsJpg(110, 50, "/capture.jpg");
+    TJpgDec.drawFsJpg(40, 30, "/capture.jpg");
 
     t = millis() - t;
     Serial.print(t); Serial.println(" ms to draw to TFT");
