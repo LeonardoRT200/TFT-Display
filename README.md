@@ -18,6 +18,6 @@ En este repositorio se encuentra el proyecto donde se implementa el reconocimien
 ![TFT Display](assets/TFT-DISPLAY.jpg)
 * ESP32-CAM
 ![ESP32-CAM](assets/ESP32-CAM.jpg)
-* Memoria MicroSD
+* Memoria MicroSD\
 ![MicroSD](assets/MicroSD.jpg)
 
