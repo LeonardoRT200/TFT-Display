@@ -43,13 +43,12 @@
 #include "List_SPIFFS.h"
 #include "Web_Fetch.h"
 
-//const char* ssid = "INFINITUM05A4_2.4";
-//const char* password = "EHr3bHaKy3";
+/*SSID AND PASSWORD TO CONNECT TO INTERNET (CHANGE DEPENDING ON THE NETWORK)*/
+const char* ssid = "XXXXX";
+const char* password = "XXXXX";
 
-const char* ssid = "DESKTOP-UOUOP00 0082";
-const char* password = "91k136#M";
-
-String camServer = "http://192.168.137.33/";
+/*CHANGE THIS TO YOUR ESP32CAM IP ADRRESS (IT APPEARS ON ITS SERIAL MONITOR)*/
+String camServer = "http://";
 
 // the following variables are unsigned longs because the time, measured in
 // milliseconds, will quickly become a bigger number than can be stored in an int.

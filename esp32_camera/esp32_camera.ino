@@ -24,7 +24,6 @@
 #include <Arduino.h>
 #include <bell-peppers_inferencing.h>
 #include "edge-impulse-sdk/dsp/image/image.hpp"
-
 #include "esp_camera.h"
 #include "esp_http_server.h"
 #include "img_converters.h"
@@ -90,15 +89,9 @@ static bool debug_nn = false; // Set this to true to see e.g. features generated
 static bool is_initialised = false;
 uint8_t *snapshot_buf; //points to the output of the capture
 
-/*
-  SSID AND PASSWORD TO CONNECT TO INTERNET (CHANGE DEPENDING ON THE NETWORK)
-*/
-//const char* ssid = "INFINITUM05A4_2.4";
-//const char* password = "EHr3bHaKy3";
-const char* ssid = "Galaxy A53";
-const char* password = "7501050699754";
-//const char* ssid = "DESKTOP-UOUOP00 0082";
-//const char* password = "91k136#M";
+/* SSID AND PASSWORD TO CONNECT TO INTERNET (CHANGE DEPENDING ON THE NETWORK)*/
+const char* ssid = "XXXXX";
+const char* password = "XXXXX";
 
 size_t out_len = 240 * 240; //LENGTH OF THE IMAGE TO SHOW
 
