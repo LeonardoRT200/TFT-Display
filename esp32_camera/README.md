@@ -8,7 +8,7 @@ En caso de no tener instalados los drivers para la placa de desarrollo ESP32-CAM
 
 1. Abrir Arduino IDE
 
-2. Seleccionar la opción "File" -> "Preferences"
+2. Seleccionar la opción "File" -> "Preferences"\
 ![Preferences](assets/preferences.png)
 
 3. En la ventana que se abrió se debe ingresar la siguiente URL en el campo "Additional Boards Manager URLs" y finalmente seleccionar la opción "OK".
@@ -38,7 +38,7 @@ git clone https://github.com/LeonardoRT200/TFT-Display.git
 
 2. Abrir Arduino IDE
 
-3. Seleccionar la opción "File" -> "Open..."
+3. Seleccionar la opción "File" -> "Open..."\
 ![Open](assets/open.png)
 
 4. Abrir la carpeta esp32_camera y seleccionar el archivo "esp32_camera.ino"

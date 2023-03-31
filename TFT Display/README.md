@@ -24,7 +24,7 @@ git clone https://github.com/LeonardoRT200/TFT-Display.git
 3. Seleccionar la opción "Open Folder"
 ![Open Folder](assets/paso_3.png)
 
-4. Seleccionar la carpeta TFT Display
+4. Seleccionar la carpeta TFT Display\
 ![Open Folder](assets/paso_4.png)
 
 Una vez abierta la carpeta se podrá ver el contenido de la misma en el panel de la izquierda, en donde se encuentra el archivo "main.cpp" el cual contiene el codigo fuente del proyecto, asi como los demas archivos necesarios para la compilación y carga del firmware a la placa de desarrollo.
